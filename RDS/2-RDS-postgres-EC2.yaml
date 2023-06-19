@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  MyPostgres:
+    Type: 'AWS::RDS::DBInstance'
+    Properties:
+      DBInstanceClass: "db.t3.micro"
+      AllocatedStorage: 20
+      Engine: postgres
+      EngineVersion: 14.8
+      MasterUsername: postgres
+      MasterUserPassword: secretpassword
+      DeletionProtection: false
+      DeleteAutomatedBackups: true
+  MyEc2:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      AvailabilityZone: us-east-1a
+      InstanceType: t2.micro
+      ImageId: ami-053b0d53c279acc90
