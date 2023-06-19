@@ -7,7 +7,7 @@ Resources:
       AllocatedStorage: 20
       Engine: postgres
       EngineVersion: 14.8
-      MasterUsername: admin
+      MasterUsername: postgres
       MasterUserPassword: secretpassword
       DeletionProtection: false
       DeleteAutomatedBackups: true
