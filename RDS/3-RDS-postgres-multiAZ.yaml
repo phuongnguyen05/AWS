@@ -17,4 +17,4 @@ Resources:
       AvailabilityZone: us-east-1a
       InstanceType: t2.micro
       ImageId: ami-053b0d53c279acc90
-      KeyName: stack_keypair
+      KeyName: stack_keypair.pem
